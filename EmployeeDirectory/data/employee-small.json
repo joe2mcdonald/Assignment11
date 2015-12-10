@@ -1,0 +1,13 @@
+{"employees":[
+{
+"id":"101",
+"name":"Amy Jones",
+"title":"Sales Representative",
+"imagepath":"images/amy_jones.jpg"  ,
+"officenumber":"555-555-55555" ,
+"cellnumber":"123-123-1234"  ,
+"email":"email@email.com"  ,
+"reportsto":"100"  ,
+"bio":"With over 14 years of sales & marketing "
+}
+]}

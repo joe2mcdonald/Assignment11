@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+    <title>Assignment 11 - Part 2 - Mobile Employee Directory - Joseph McDonald - November 2015</title>
+    <meta name="description" content="HOME MOBILE SITE ">
+	<meta name="author" content="JOSEPH MCDONALD">
+ <!-- <link href="css/main.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link href="css/drk-lght-brown.min.css" rel="stylesheet">
+   
+    <!-- JavaScript HTML requirements -->
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script src="getJSON.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/empdetails.js"></script>
+	<script src="js/directreports.js"></script>
+</head>
+
+<body>   
+ <!--  ========================================================================================= -->
+
+ 
+ 
+<!-- MAIN SEARCH -->                                      <!-- 1ST MAIN MOBILE PAGE  -->
+
+
+ 
+<div data-role="page" id="pageId1">                        <!-- DIV FOR MOBILE PAGE -->  
+  <header data-role="header" data-theme="b">              <!-- HEADER FOR MOBILE PAGE --> 
+	<h1>Employee Directory</h1>
+       	
+  </header> 
+  	
+  <section class="ui-content" role="main">		            <!-- SECTION FOR MOBILE PAGE -->  	
+  
+   
+ <!--     
+<div data-role="content" id="container"></div>
+--> 
+    
+<div  id="searchId">
+
+<ul data-role="listview" data-inset="true" data-filter-reveal="true" data-filter-placeholder="Search Employees..." data-filter="true" data-count-theme="b" value=empVal  id="empId">	
+
+</ul>
+</div> 
+ 
+<h3> Welcome to Employee Directory!</h3>
+<p>
+This is a sample app that demonstrates how to build applications with jQuery Mobile.
+ </p> 
+ 
+ 
+  </section>
+    
+   <footer data-role="footer">							 <!-- FOOTER FOR MOBILE PAGE -->
+        	 <h4>&copy; 2015 McDonald Media Production</h4>
+   </footer>
+</div>
+
+
+
+
+
+<!--  ========================================================================================= -->
+
+
+
+
+
+<!--  ========================================================================================= -->
+<!-- EMPLOYEE DETAILS -->                            <!-- 2ND  MOBILE PAGE -->
+
+<div data-role="page" id="pageId2">
+    <header data-role="header">
+
+   <a href="#pageId1" data-role="button" data-direction="reverse" data-icon="back"  data-corners="true" data-transition="slide">back</a> 
+               <h1>Employee Details</h1>           
+  <a href="#pageId1" data-role="button" data-direction="reverse" data-icon="search" data-corners="true" data-transition="slide">search</a>           
+    </header>
+    
+    <section class="ui-content" role="main">
+    	<h2> <br>    </h2>
+    	
+ <!--      -->  	
+    <div data-role="content" id="page2container"></div> 	
+ 
+    
+    		
+ <!--  LISTVIEW THUMBNAILS 	 --> 
+ <ul data-role="listview" data-inset="true"  id="empId2" >
+   
+ <!--  
+    <li><a href="#">
+        <img src="../_assets/img/album-bb.jpg">
+    <h2>Broken Bells</h2>
+    <p>Broken Bells</p></a>
+    </li>
+    <li><a href="#">
+        <img src="../_assets/img/album-hc.jpg">
+    <h2>Warning</h2>
+    <p>Hot Chip</p></a>
+    </li>
+    <li><a href="#">
+        <img src="../_assets/img/album-p.jpg">
+    <h2>Wolfgang Amadeus Phoenix</h2>
+    <p>Phoenix</p></a>
+    </li>
+ -->   
+    
+</ul>
+   	
+      	
+    </section>
+    
+    <footer data-role="footer">
+        <h4>&copy; 2015 McDonald Media Production</h4>
+    </footer>
+</div>
+
+
+
+
+
+ 
+
+
+
+<!--  ========================================================================================= -->
+<!-- DIRECT REPORTS -->                                <!-- 3rd  MOBILE PAGE -->
+
+<div data-role="page" id="pageId3">
+    <header data-role="header">
+
+   <a href="#pageId2" data-role="button" data-direction="reverse" data-icon="back"  data-corners="true" data-transition="slide">back</a> 
+               <h1>Direct Reports</h1>           
+  <a href="#pageId1" data-role="button" data-direction="reverse" data-icon="search" data-corners="true" data-transition="slide">search</a>           
+    </header>  
+    
+   
+    <section class="ui-content" role="main">
+    	<h2> <br>    </h2>
+    	
+ <!--      -->  	
+    <div data-role="content" id="page3container"></div> 	
+ 
+    
+    		
+ <!--  LISTVIEW THUMBNAILS 	 --> 
+ <ul data-role="listview" data-inset="true"  id="empId3" >
+   
+ <!--  
+    <li><a href="#">
+        <img src="../_assets/img/album-bb.jpg">
+    <h2>Broken Bells</h2>
+    <p>Broken Bells</p></a>
+    </li>
+    <li><a href="#">
+        <img src="../_assets/img/album-hc.jpg">
+    <h2>Warning</h2>
+    <p>Hot Chip</p></a>
+    </li>
+    <li><a href="#">
+        <img src="../_assets/img/album-p.jpg">
+    <h2>Wolfgang Amadeus Phoenix</h2>
+    <p>Phoenix</p></a>
+    </li>
+ -->   
+    
+</ul>
+   	
+     	
+    </section>
+    
+                                    
+                                        
+                                                
+    <footer data-role="footer">
+        <h4>&copy; 2015 McDonald Media Production</h4>
+    </footer>
+</div>
+
+
+
+
+
+<!--  ========================================================================================= -->
+
+</body>
+</html>
